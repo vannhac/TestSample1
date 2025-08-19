@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Reanty</title>
+
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&family=Nunito&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header__top">
+        <div class="full-content flex-between">
+          <div class="header__address flex-between">
+            <div class="header__left">
+              <p class="header__desc flex-between">
+                <span class="header__icon">
+                  <i class="fa-solid fa-envelope"></i></span
+                >Info@webmail.com
+              </p>
+            </div>
+            <div class="header__left">
+              <p class="header__desc flex-between">
+                <span class="header__icon"
+                  ><i class="fa-solid fa-location-pin"></i>
+                </span>
+
+                547 ns tower St. anglo City, USA
+              </p>
+            </div>
+          </div>
+          <div class="header__social flex-between">
+            <span class="social__icon flex-middle">
+              <a href="#" class="social__link"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </span>
+            <span class="social__icon flex-middle">
+              <a href="#" class="social__link"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </span>
+            <span class="social__icon flex-middle">
+              <a href="#" class="social__link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </span>
+            <span class="social__icon flex-middle">
+              <a href="#" class="social__link"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </span>
+            <span class="social__icon flex-middle">
+              <a href="#" class="social__link"
+                ><i class="fa-brands fa-pinterest-p"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom flex-between full-content">
+        <div class="logo">
+          <img src="./img/Logo.svg" alt="" class="header__logo" />
+        </div>
+        <nav class="nav flex-between">
+          <ul class="nav__list flex-between">
+            <li class="nav_item">
+              <a href="" class="nav__link active">Home</a>
+            </li>
+            <li class="nav_item"><a href="" class="nav__link">About</a></li>
+            <li class="nav_item"><a href="" class="nav__link">Feature</a></li>
+            <li class="nav_item"><a href="" class="nav__link">Market</a></li>
+            <li class="nav_item"><a href="" class="nav__link">Services</a></li>
+            <li class="nav_item"><a href="" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="header__nav--button flex-between">
+            <a href="#" class="header__login font18">Log In</a>
+            <a href="#" class="btn header__signup font18">Sign Up</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- hero -->
+    <div class="hero">
+      <div class="flex-between full-content">
+        <div class="hero__content">
+          <h1 class="heading--lv1">
+            Find the best Real Estate on your country .
+          </h1>
+          <p class="desc hero__desc">
+            With over 1 million homes for sale available on the website, Renting
+            can match you with a house.
+          </p>
+          <a href="#" class="hero__button btn">
+            Start membership
+            <span><i class="ml-8 fa-solid fa-angle-right"></i></span>
+          </a>
+          <div class="hero__ranking flex-between">
+            <div class="hero__ranking--img">
+              <img
+                src="./img/hero/home1.jpg"
+                alt="home1"
+                class="rank__img rank__img--upper"
+              />
+              <img src="./img/hero/home2.jpg" alt="home2" class="rank__img" />
+              <img src="./img/hero/home3.jpg" alt="home3" class="rank__img" />
+            </div>
+            <div class="hero__pagination flex-between">
+              <div class="bar" id="bar">
+                <div class="value"></div>
+              </div>
+              <a href="#" class="pagination__item hero__active">1</a
+              ><a href="#" class="pagination__item">2</a
+              ><a href="#" class="pagination__item">3</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__cta">
+          <img src="./img/hero/house.jpg" alt="bigHouse" class="main__img" />
+          <div class="hero__stat">
+            <img
+              src="./img/hero/increase 1.png"
+              alt="increase"
+              class="stat__img"
+            />
+            <p class="stat__money">$7454.21</p>
+            <p class="desc stat__desc">Revenue</p>
+          </div>
+          <button class="hero__work btn flex-between">
+            How it works<span class="hero__audio flex-middle"
+              ><i class="fa-solid fa-play"></i
+            ></span>
+          </button>
+          <div class="hero__arrow">
+            <img src="./img/hero/Vector.svg" alt="" class="arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+    <main id="main">
+      <!-- cta -->
+      <div class="cta main-content">
+        <div class="cta__top">
+          <div class="cta__tiltle">
+            <h2 class="heading-lv2">Commercial Real Estate And Office</h2>
+            <p class="desc cta__top--desc">
+              Work with Renting brokers who help you to get started with smart
+              tools to.
+            </p>
+          </div>
+          <div class="cta__container flex-between">
+            <div class="cta_item shadow">
+              <span class="cta__icon flex-middle"
+                ><i class="fa-solid fa-person-chalkboard"></i
+              ></span>
+              <div class="cta__item--content">
+                <div class="cta__heading">Buyer Guides</div>
+                <p class="desc">
+                  Nurture valuable leads into customers, and turn one time.
+                </p>
+              </div>
+            </div>
+            <div class="cta_item shadow">
+              <span class="cta__icon flex-middle"
+                ><i class="fa-solid fa-user"></i
+              ></span>
+              <div class="cta__item--content">
+                <div class="cta__heading">Renter Guides</div>
+                <p class="desc">
+                  Build brand awareness on the top social media networks.
+                </p>
+              </div>
+            </div>
+            <div class="cta_item shadow">
+              <span class="cta__icon flex-middle"
+                ><i class="fa-solid fa-house-circle-check"></i
+              ></span>
+              <div class="cta__item--content">
+                <div class="cta__heading">Seller Guides</div>
+                <p class="desc">
+                  Get professionally-written content that attracts qualified.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cta__bottom flex-between">
+          <div class="cta__left position-rel ">
+            <img src="./img/hero/home1.jpg" alt="home1" class="cta__img cta__img--lower"></img>
+            <img src="./img/hero/home2.jpg" alt="home2" class="cta__img cta__img--upper position-rel">
+          
+            <div class="cta__stat position-ab text-center">
+          
+          </img>
+            <span class="cta__start"><i class="fa-solid fa-star"></i></span>
+            <p class="cta__stat--desc ">5 Star Rating</p>
+          </div>
+          </div>
+          <div class="cta__right">
+            <div class="cta__tiltle">
+              <h2 class="heading-lv2">Dream living Spaces setting New Build</h2>
+              <p class="desc cta__bottom--desc">
+                SeaWire Web is a wireframe kit that has more than 15 popular
+                categories and more than 200 screens
+              </p>
+            </div>
+            <div class="cta__intro">
+              <div class="cta__item flex-between ">
+                <span class="cta__icon--bottom"><i class="fa-regular fa-house"></i></span>
+                <div class="ctab__item--content">
+                  <h3 class="cta_heading--lv3">The perfect Rsidencye</h3>
+                  <p class="desc">Take a deep dive and browse origin neighborhood photos.</p>
+                </div>
+              </div>
+              <div class="cta__item flex-between ">
+                <span class="cta__icon--bottom">
+                <i class="fa-solid fa-user"></i>
+                  
+                </span>
+                <div class="ctab__item--content">
+                  <h3 class="cta_heading--lv3">Global Arhitect Experts</h3>
+                  <p class="desc">Take a deep dive and browse origin neighborhood photos.</p>
+                </div>
+              </div>
+              <div class="cta__item flex-between ">
+                <span class="cta__icon--bottom"><i class="fa-solid fa-earth-americas"></i></span>
+                <div class="ctab__item--content">
+                  <h3 class="cta_heading--lv3">Built-in a storage capable</h3>
+                  <p class="desc">Take a deep dive and browse origin neighborhood photos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- properties -->
+       <div class="properties flex-between main-content">
+        <div class="properties__content">
+          <div class="pro__tiltle flex-middle">
+            <span class="hexa__icon"><i class="fa-solid fa-hexagon"></i></span>
+            <p class="pro__desc">About Home</p>
+          </div>
+          <h2 class="heading-lv2">Today sells properties</h2>
+          <p class="desc">SeaWire Web is a wireframe kit that has more than 15 popular categories and more than 200 screens</p>
+          <ul class="pro__list">
+            <li class="pro__item">Live Music concert at Newyork</li>
+            <li class="pro__item">Our best boat Tour is  j us t for you</li>
+            <li class="pro__item">Live Music concert at Newyork</li>
+            <li class="pro__item">Our best boat Tour is  j us t for you</li>
+            <li class="pro__item">Live Music concert at Newyork</li>
+          </ul>
+           <div class="pro__ranking flex-between">
+            <div class="hero__ranking--img">
+              <img
+                src="./img/hero/home1.jpg"
+                alt="home1"
+                class="rank__img rank__img--upper"
+              />
+              <img src="./img/hero/home2.jpg" alt="home2" class="rank__img" />
+              <img src="./img/hero/home3.jpg" alt="home3" class="rank__img" />
+            </div>
+            <div class="hero__pagination flex-between">
+              <div class="bar" id="bar">
+                <div class="value"></div>
+              </div>
+              <a href="#" class="pagination__item hero__active">1</a
+              ><a href="#" class="pagination__item">2</a
+              ><a href="#" class="pagination__item">3</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="properties__display">
+            <img src="./img/hero/house.jpg" alt="" class="proper__img proper__img--bigger">
+            <img src="./img/hero/home2.jpg" alt="" class="proper__img">
+            <img src="./img/hero/home3.jpg" alt="" class="proper__img">
+          </div>
+       </div>
+      <!-- services -->
+       <div class="services">
+        <div class="service__title">
+          <h2 class="heading-lv2">Services provide for you</h2>
+          <p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+        </div>
+        <div class="service__container main-content">
+          <div class="service__item text-center">
+            <span class="service__icon flex-middle"><i class="fa-solid fa-bed"></i></span>
+            <div class="service__content">
+              <h3 class="ser__heading">Bed Rooms</h3>
+              <p class="desc">Desktop publishing software like aldus page maker including </p>
+              <a href="" class="ser__cta">Learn more <i class="fa-solid fa-arrow-right-long ml-8"></i> </a>
+            </div>
+          </div>
+          <div class="service__item text-center">
+            <span class="service__icon flex-middle"><i class="fa-solid fa-bath"></i></span>
+            <div class="service__content">
+              <h3 class="ser__heading">Swimming pool</h3>
+              <p class="desc">React creative agency
+amet, consec tetur adipiscing elit.</p>
+              <a href="" class="ser__cta">Learn more <i class="fa-solid fa-arrow-right-long ml-8"></i></a>
+            </div>
+          </div>
+          <div class="service__item text-center">
+            <span class="service__icon flex-middle"><i class="fa-solid fa-pen-nib"></i></span>
+            <div class="service__content">
+              <h3 class="ser__heading">Copywriting content</h3>
+              <p class="desc">The standard chunk of used since the 1500s is reproduced</p>
+              <a href="" class="ser__cta">Learn more <i class="fa-solid fa-arrow-right-long ml-8"></i></a>
+            </div>
+          </div>
+          <div class="service__item text-center">
+            <span class="service__icon flex-middle">
+
+                <i class="fa-solid fa-house-circle-check"></i>
+
+            </span>
+            <div class="service__content">
+              <h3 class="ser__heading">Smart Home</h3>
+              <p class="desc">The standard chunk of used since the 1500s is reproduced</p>
+              <a href="" class="ser__cta">Learn more <i class="fa-solid fa-arrow-right-long ml-8"></i></a>
+            </div>
+          </div>
+          <div class="service__item text-center">
+            <span class="service__icon flex-middle"><i class="fa-solid fa-box-archive"></i></span>
+            <div class="service__content">
+              <h3 class="ser__heading">Libarary area</h3>
+              <p class="desc">Desktop publishing software like aldus page maker including </p>
+              <a href="" class="ser__cta">Learn more <i class="fa-solid fa-arrow-right-long ml-8"></i></a>
+            </div>
+          </div>
+          <div class="service__item text-center">
+            <span class="service__icon flex-middle">
+              <i class="fa-solid fa-user"></i
+              >
+            </span>
+            <div class="service__content">
+              <h3 class="ser__heading">Responsive Duity</h3>
+              <p class="desc">React creative agency
+amet, consec tetur adipiscing elit.</p>
+              <a href="" class="ser__cta">Learn more <i class="fa-solid fa-arrow-right-long ml-8"></i></a>
+            </div>
+          </div>
+        </div>
+       </div>
+      <!-- features -->
+       <div class="feature main-content">
+        <div class="feature__top flex-between">
+          <div class="feature__title">
+            <h2 class="heading-lv2 feature__heading" >Featured Property</h2>
+            <p class="desc">Find your suitable house here and stay safe and relaxe with pleasure</p>
+          </div>
+          <ul class="feature__list flex-between">
+            <li class="feature__link position-rel">Appartment</li>
+            <li class="feature__link position-rel">Vila</li>
+            <li class="feature__link position-rel">Land</li>
+          </ul>
+        </div>
+        <div class="feature__bottom flex-between">
+          <div class="feature__item position-rel shadow">
+            <img src="./img/hero/home1.jpg" alt="home1" class="feature__img">
+            <div class="feature__price position-ab">
+              <h3 class="feature__heading--sub">The Stokes Appartment</h3>
+
+              <p class="desc"> <i class="fa-solid fa-location-pin"></i>Cleveland, United States</p>
+
+              <div class="feature__move flex-between">
+                <span class="feature__money">$2,32,120</span>
+                <a href="" class="btn feature__btn"><i class="fa-solid fa-arrow-right-long"></i></a></div>
+            </div>
+          </div>
+          <div class="feature__item position-rel shadow">
+            <img src="./img/hero/home2.jpg" alt="home2" class="feature__img">
+            <div class="feature__price position-ab">
+              <h3 class="feature__heading--sub">The Stokes Appartment</h3>
+
+              <p class="desc"> <i class="fa-solid fa-location-pin"></i>Cleveland, United States</p>
+
+              <div class="feature__move flex-between">
+                <span class="feature__money">$2,32,120</span>
+                <a href="" class="btn feature__btn"><i class="fa-solid fa-arrow-right-long"></i></a></div>
+            </div>
+          </div>
+          <div class="feature__item position-rel shadow">
+            <img src="./img/hero/home3.jpg" alt="home3" class="feature__img">
+          <div class="feature__price position-ab">
+              <h3 class="feature__heading--sub">The Stokes Appartment</h3>
+
+              <p class="desc"> <i class="fa-solid fa-location-pin"></i> Cleveland, United States</p>
+
+              <div class="feature__move flex-between">
+                <span class="feature__money">$2,32,120</span>
+                <a href="" class="btn feature__btn"><i class="fa-solid fa-arrow-right-long"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <button class="feature__explore">Explore Property</button>
+       </div>
+      <!-- unit -->
+       <div class="unit position-rel">
+        
+        <div class="unit__item flex-between position-ab shadow">
+          <div class="unit__left position-rel">
+            <img src="./img/unit/home.svg" alt="homeUnit" class="unit__img">
+            <span class="unit__money flex-middle position-ab"><i class="fa-solid fa-dollar-sign"></i></span>
+          </div>
+
+
+        <div class="unit__content">
+          <h3 class="unit__heading">4000</h3>
+          <p class="desc">242 Metric way</p>
+          <div class="unit__inter flex-between">
+            <span class="unit_icon flex-middle"> <i class="fa-solid fa-bed"></i></span>
+            <p class="desc">2</p>
+            <span class="unit_icon flex-middle"> <i class="fa-solid fa-bath"></i></span>
+            <p class="desc">2</p>
+            <span class="unit_icon flex-middle"> <i class="fa-solid fa-pen-nib"></i></span>
+            <p class="desc">500sqf</p>
+          </div>
+        </div>
+        </div>
+<div class="unit__circle flex-middle position-ab">
+        <span>UNIT NO. </span>
+        <STRONG>9A</STRONG>
+       </div>
+       </div>
+       <!-- customer -->
+<div class="customer main-content">
+  <div class="cus__title text-center">
+    <h2 class="heading-lv2">Commercial Real Estate And Office</h2>
+              <p class="desc cta__top--desc">
+                Work with Renting brokers who help you to get started with smart
+                tools to.
+              </p>
+  </div>
+  <div class="cus__container flex-between">
+    <span class="cus__move flex-middle cus__pre"><i class="fa-solid fa-caret-left"></i></span>
+    <div class="cus__content flex-between">
+      <div class="cus__left position-rel">
+        <img src="./img/cus/bg base.png" alt="orange" class="cus__img cus__img--lower position-ab">
+        <img src="./img/cus/cus1.jpg" alt="customer" class="cus__img cus__img--upper">
+      </div>
+      <div class="cus__right">
+
+        <img src="./img/cus/comma.svg" alt="" class="cus__comma">
+        <p class="cus__desc">We make sure you have a fine distance with the sickness. We make you never lose hope. We make sure you have with the sickness. </p>
+        <img src="./img/cus/rating icon.svg" alt="rating" class="cus__ratting">
+        <p class="customer__name">Yunus Seyhan</p>
+        <p class="desc">Postgraduate Student</p>
+      </div>
+    </div>
+    <span class="cus__move flex-middle cus__last"><i class="fa-solid fa-caret-right"></i></span>
+  </div>
+
+
+</div>
+      <!-- project -->
+       <div class="projects main-content">
+        <h2 class="heading-lv2 text-center">We build more projects successful</h2>
+        <div class="project__container flex-between">
+          <div class="project__item text-center">
+            <p class="project__item--heading">San Francisco, California</p>
+            <a href="" class="btn project__btn">See more <i class="ml-8 fa-solid fa-angle-right "></i></a>
+          </div>
+          <div class="project__item text-center">
+            <p class="project__item--heading">Washington DC</p>
+            <a href="" class="btn project__btn">See more <i class="ml-8 fa-solid fa-angle-right "></i></a>
+          </div>
+          <div class="project__item text-center">
+            <p class="project__item--heading">Chicago</p>
+            <a href="" class="btn project__btn">See more <i class="ml-8 fa-solid fa-angle-right "></i></a>
+          </div>
+        </div>
+        <form action="" class="project__form position-rel">
+          <span class="form__icon position-ab "><i class="fa-solid fa-envelope"></i>
+
+          </span>
+          <input type="email" name="" class="form__input" id="email" placeholder="Enter your email here">
+          <button class="btn  position-ab form__submit">Subscribe</button>
+        </form>
+       </div>
+
+      <!-- blog -->
+       <div class="blog main-content">
+           
+            <div class="blog__title text-center">
+ <h2 class="heading-lv2 ">From our blog</h2>
+      
+            <p class="desc cta__top--desc">
+             Find your suitable house here and stay safe and relaxe with pleasure
+            </p>
+          </div>
+            <div class="blog__container flex-between">
+              <div class="blog__item shadow">
+                <img src="./img/hero/home1.jpg" alt="home1" class="blog__img">
+                <div class="blog__content">
+                  <div class="blog__heading">How to rent a home very easily?</div>
+                  <p class="blog__mark"><span class="mark__icon mr-8"><i class="fa-regular fa-bookmark"></i></span>Rentals</p>
+                  <p class="desc">How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...</p>
+                  <div class="blog__history"><span class="blog__time"><i class="fa-solid fa-calendar"></i> 3 years ago</span><span class="blog__author ml-20"><i class="fa-regular fa-user"></i><strong class="ml-8">By Mike Hesson </strong></span></div>
+                </div>
+              </div>
+              <div class="blog__item shadow">
+                <img src="./img/hero/home2.jpg" alt="home2" class="blog__img">
+                <div class="blog__content">
+                  <div class="blog__heading">How to rent a home very easily?</div>
+                  <p class="blog__mark"><span class="mark__icon mr-8"><i class="fa-regular fa-bookmark"></i></span>Rentals</p>
+                  <p class="desc">How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...</p>
+                  <div class="blog__history"><span class="blog__time"><i class="fa-solid fa-calendar"></i> 3 years ago</span><span class="blog__author ml-20"><i class="fa-regular fa-user"></i><strong class="ml-8">By Mike Hesson </strong></span></div>
+                </div>
+              </div>
+              <div class="blog__item shadow">
+                <img src="./img/hero/home3.jpg" alt="home3" class="blog__img">
+                <div class="blog__content">
+                  <div class="blog__heading">How to rent a home very easily?</div>
+                  <p class="blog__mark"><span class="mark__icon mr-8"><i class="fa-regular fa-bookmark"></i></span>Rentals</p>
+                  <p class="desc">How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...</p>
+                  <div class="blog__history"><span class="blog__time"><i class="fa-solid fa-calendar"></i> 3 years ago</span> 
+                    <span class="blog__author ml-20"><i class="fa-regular fa-user"></i><strong class="ml-8">By Mike Hesson </strong></span></div>
+                </div>
+              </div>
+            </div>
+
+        <button class="Blog__read">Read All</button>
+
+       </div>
+      <!-- contact -->
+    
+    </main>
+  </body>
+</html>
