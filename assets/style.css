@@ -189,8 +189,15 @@ a {
 /* ============================Hero============================= */
 .hero {
   background-color: #f2f6f7;
+  padding-bottom: 120px;
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .hero__content {
+  transform: translateY(120px);
   width: 43%;
   flex-shrink: 0;
   margin-right: 10px;
@@ -320,7 +327,7 @@ a {
 
 .arrow {
   left: -25%;
-  bottom: 60%;
+  bottom: 40%;
 }
 /* ===================================cta================================ */
 .cta__top {
