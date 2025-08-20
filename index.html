@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./assets/reset.css" />
     <!-- style -->
     <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Responsive -->
+<link rel="stylesheet" href="./assets/responsive.css">
   </head>
   <body>
     <!-- header -->
@@ -76,6 +78,33 @@
         </div>
       </div>
       <div class="header__bottom flex-between full-content">
+        <!-- Tablet, mobile header -->
+        <div class="nav__mobile">
+          <input type="checkbox" name="checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+
+          <label for="menu-checkbox">
+            <span class="list__btn"><i class="fa-solid fa-bars"></i></span>
+          </label>
+ <!-- overlay -->
+     <label for="menu-checkbox" class="menu-overlay"></label>
+     <!-- nav mobile -->
+     <div class="menu-drawer ">
+<div class="menu-drawer__top flex-between">
+  <img src="./img/Logo.svg" alt="">
+  <label for="menu-checkbox" class="menu__close"><i class="fa-solid fa-circle-xmark"></i></label>
+</div>
+  
+      <ul class="nav__list--mobile">
+      </ul>
+     </div>
+
+        </div>
+       
+
+
+
+
+
         <div class="logo">
           <img src="./img/Logo.svg" alt="" class="header__logo" />
         </div>
@@ -90,13 +119,16 @@
             <li class="nav_item"><a href="" class="nav__link">Services</a></li>
             <li class="nav_item"><a href="" class="nav__link">Contact</a></li>
           </ul>
-          <div class="header__nav--button flex-between">
-            <a href="#" class="header__login font18">Log In</a>
-            <a href="#" class="btn header__signup font18">Sign Up</a>
-          </div>
         </nav>
+        <div class="header__nav--button flex-between">
+          <a href="#" class="header__login font18">Log In</a>
+          <a href="#" class="btn header__signup font18">Sign Up</a>
+        </div>
+          
       </div>
     </header>
+
+ 
     <!-- hero -->
     <div class="hero">
       <div class="hero__container full-content">
@@ -224,14 +256,14 @@
               </p>
             </div>
             <div class="cta__intro">
-              <div class="cta__item flex-between ">
+              <div class="cta__item--2 flex-between ">
                 <span class="cta__icon--bottom"><i class="fa-regular fa-house"></i></span>
                 <div class="ctab__item--content">
                   <h3 class="cta_heading--lv3">The perfect Rsidencye</h3>
                   <p class="desc">Take a deep dive and browse origin neighborhood photos.</p>
                 </div>
               </div>
-              <div class="cta__item flex-between ">
+              <div class="cta__item--2 flex-between ">
                 <span class="cta__icon--bottom">
                 <i class="fa-solid fa-user"></i>
                   
@@ -241,7 +273,7 @@
                   <p class="desc">Take a deep dive and browse origin neighborhood photos.</p>
                 </div>
               </div>
-              <div class="cta__item flex-between ">
+              <div class="cta__item--2 flex-between ">
                 <span class="cta__icon--bottom"><i class="fa-solid fa-earth-americas"></i></span>
                 <div class="ctab__item--content">
                   <h3 class="cta_heading--lv3">Built-in a storage capable</h3>
@@ -626,7 +658,7 @@ amet, consec tetur adipiscing elit.</p>
         <p class="footer__link">Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565</p>
         <h3 class="footer__heading heading--last">News letter</h3>
         <form  class="footer__form position-rel">
-          <input type="text" name="email" id="input--footer" placeholder="Enter your email address" class="footer__input">
+          <input type="text" name="email" id="input--footer" autocomplete="off" placeholder="Enter your email address" class="footer__input">
           <span class="footer__icon--form position-ab"> <i class="fa-solid fa-envelope"></i></span></form>
        </div>
       </div>
@@ -636,5 +668,10 @@ amet, consec tetur adipiscing elit.</p>
         <div class="copyright">© 2021 Aeyman Megha All rights reserved.</div>
       </div>
      </footer>
+     <script>
+          const NavPc = document.querySelector(".nav__list");
+          const NavMobile = document.querySelector(".nav__list--mobile");
+          NavMobile.innerHTML = NavPc.innerHTML
+        </script>
   </body>
 </html>
