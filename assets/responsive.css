@@ -343,6 +343,10 @@
   }
   .feature__list {
   }
+  .feature__heading {
+    margin-bottom: 23px;
+    text-align: center;
+  }
   .feature__bottom {
     gap: 30px;
     flex-direction: column;
