@@ -367,9 +367,10 @@ a {
 }
 .modal--video {
   display: block;
-  width: 95%;
+  width: 80%;
   object-fit: contain;
   border-radius: 10px;
+  margin: 0 auto;
 }
 .modal-close {
   top: 5px;
