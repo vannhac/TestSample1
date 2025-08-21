@@ -153,6 +153,20 @@
               />
               <img src="./img/hero/home2.jpg" alt="home2" class="rank__img" />
               <img src="./img/hero/home3.jpg" alt="home3" class="rank__img" />
+              <img
+                src="./img/hero/home2.jpg"
+                alt="home4"
+                class="rank__img rank__img--upper"
+              />
+              <img src="./img/hero/home1.jpg" alt="home5" class="rank__img" />
+              <img src="./img/hero/home3.jpg" alt="home6" class="rank__img" />
+              <img
+                src="./img/hero/home3.jpg"
+                alt="home1"
+                class="rank__img rank__img--upper"
+              />
+              <img src="./img/hero/home1.jpg" alt="home2" class="rank__img" />
+              <img src="./img/hero/home2.jpg" alt="home3" class="rank__img" />
             </div>
             <div class="hero__pagination flex-between">
               <div class="bar" id="bar">
@@ -176,7 +190,7 @@
             <p class="stat__money">$7454.21</p>
             <p class="desc stat__desc">Revenue</p>
           </div>
-          <button class="hero__work btn flex-between">
+          <button class="hero__work btn flex-between" id="modal-open">
             How it works<span class="hero__audio flex-middle"
               ><i class="fa-solid fa-play"></i
             ></span>
@@ -184,8 +198,15 @@
           <div class="hero__arrow">
             <img src="./img/hero/Vector.svg" alt="" class="arrow" />
           </div>
+          <div class="modal-container flex-middle" id="modal-container">
+            <div class="modal position-rel" id="modal">
+              <video src="./video/videoplayback.mp4"  controls class="modal--video"></video>
+              <button class="modal-close position-ab" id="modal-close"><i class="fa-solid fa-circle-xmark"></i></button>
+            </div>
+          </div>
         </div>
       </div>
+    
     </div>
     <!-- main -->
     <main id="main">
@@ -309,6 +330,8 @@
               />
               <img src="./img/hero/home2.jpg" alt="home2" class="rank__img" />
               <img src="./img/hero/home3.jpg" alt="home3" class="rank__img" />
+
+              
             </div>
             <div class="hero__pagination flex-between">
               <div class="bar" id="bar">
@@ -673,10 +696,8 @@ amet, consec tetur adipiscing elit.</p>
         <div class="copyright">© 2021 Aeyman Megha All rights reserved.</div>
       </div>
      </footer>
-     <script>
-          const NavPc = document.querySelector(".nav__list");
-          const NavMobile = document.querySelector(".nav__list--mobile");
-          NavMobile.innerHTML = NavPc.innerHTML
+     <script src="./main.js">
+       
         </script>
   </body>
 </html>

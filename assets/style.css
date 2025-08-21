@@ -230,7 +230,7 @@ a {
   width: 88%;
   gap: 10px;
 }
-.hero__ranking--img {
+.hero .hero__ranking--img {
   display: flex;
   align-items: end;
 }
@@ -328,6 +328,45 @@ a {
 .arrow {
   left: -25%;
   bottom: 40%;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  transition: 0.5s ease;
+  transform: translateY(200%);
+  cursor: pointer;
+}
+.modal-container.show {
+  transform: translateY(0);
+}
+.modal {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+.modal--video {
+  display: block;
+  width: 95%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.modal-close {
+  top: 5px;
+  cursor: pointer;
+  right: 4px;
+  font-size: 25px;
+  color: red;
+  transition: opacity 0.5s ease;
+  background-color: transparent;
+  border: none;
+}
+.modal-close:hover {
+  opacity: 0.7;
 }
 /* ===================================cta================================ */
 .cta__top {
